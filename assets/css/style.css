@@ -22,7 +22,7 @@ section {
 	padding: 30px 0;
 }
 section.dark_theme {
-	background: #185A9B;
+	background: #1E5128;
 	color: #fff;
 }
 .clearfix:after {
@@ -48,7 +48,7 @@ b {
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
 	border-radius: 4px;
-	background: #185A9B;
+	background: #1E5128;
 	font-family: 'AvenirNextCyr', sans-serif;
 	font-weight: 700;
 	font-size: 24px;
