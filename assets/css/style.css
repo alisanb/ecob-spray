@@ -99,7 +99,7 @@ h2.title span {
     display: flex;
     align-items: center;
     justify-content: center;
-	background: #1E7DDB;
+	background: #4E9F3D;
 	color: white;
 }
 .offer_section .offer_image {
@@ -133,7 +133,7 @@ h2.title span {
     position: absolute;
     right: 0;
     color: white;
-    background-color: #1E7DDB;
+    background-color: #4E9F3D;
 }
 .offer_section.offer2 .price_item.new .value {
 	font-weight: 700;
@@ -332,7 +332,7 @@ h2.title span {
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
 	border-radius: 4px;
-	background: #1E7DDB;
+	background: #4E9F3D;
 	color: #fff;
 }
 .offer_section .field {
