@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Спасибо за заказ!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+.success_wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+            padding: 40px 20px;
+            background-color: var(--bg-light);
+            background-image: linear-gradient(180deg, #faebeb 0%, var(--bg-light) 100%);
+        }
+        .icon {
+            font-size: 70px;
+            color: var(--accent-blue);
+            margin-bottom: 25px;
+            width: 100px;
+            height: 100px;
+            background: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            box-shadow: 0 10px 25px rgba(0, 136, 204, 0.15);
+        }
+        .main_title {
+            margin-bottom: 15px;
+            color: var(--primary-dark);
+            font-size: 28px;
+        }
+        .subtitle {
+            margin-bottom: 40px;
+            font-size: 15px;
+            color: var(--text-muted);
+            line-height: 1.5;
+            max-width: 90%;
+        }
+        .btn_back {
+            background: linear-gradient(135deg, var(--accent-gold) 0%, var(--danger) 100%);
+            color: white;
+            text-decoration: none;
+            padding: 16px 35px;
+            border-radius: 30px;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 14px;
+            letter-spacing: 1px;
+            transition: all 0.3s;
+            box-shadow: 0 8px 20px rgba(15, 37, 55, 0.15);
+        }
+        .btn_back:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 12px 25px rgba(15, 37, 55, 0.25);
+            background: var(--accent-gold-hover);
+        }
+    </style>
+</head>
+<body>
+    <div class="main_wrapper">
+        <div class="success_wrapper">
+            <div class="icon">✓</div>
+            <h1 class="main_title">Спасибо за заказ!</h1>
+            <p class="subtitle">Ваша заявка успешно отправлена. В ближайшее время с вами свяжется наш менеджер для уточнения деталей.</p>
+            <a href="index.html" class="btn_back">Вернуться на сайт</a>
+        </div>
+    </div>
+</body>
+</html>

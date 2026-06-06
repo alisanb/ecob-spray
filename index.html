@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Эргономичная Насадка-Пистолет для Аэрозольных Баллонов | Профессиональное Распыление</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        :root {
+        --success-green: #10b981;
+        --text-dark: #1e293b;
+        --text-muted: #64748b;
+    }
+
+    .delivery-notice-container {
+        width: 100%;
+        max-width: 550px;
+        margin: 15px auto;
+        font-family: system-ui, -apple-system, sans-serif;
+    }
+
+    .delivery-card {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        background: #f0fdf4; /* Light green background */
+        border: 1px solid #bbf7d0;
+        padding: 16px 20px;
+        border-radius: 12px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .delivery-icon-box {
+        background: var(--success-green);
+        color: white;
+        padding: 10px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        box-shadow: 0 4px 6px -1px rgba(16, 185, 129, 0.2);
+    }
+
+    .truck-icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    .delivery-text-box {
+        flex: 1;
+        padding-right: 45px; /* Leave space for the badge */
+    }
+
+    .delivery-title {
+        margin: 0 0 4px 0;
+        font-size: 16px;
+        font-weight: 700;
+        color: var(--text-dark);
+    }
+
+    .delivery-desc {
+        margin: 0;
+        font-size: 13px;
+        color: var(--text-muted);
+        line-height: 1.4;
+    }
+
+    .delivery-badge {
+        position: absolute;
+        top: 12px;
+        right: 15px;
+        background: #ef4444; /* Eye-catching red badge */
+        color: white;
+        font-size: 11px;
+        font-weight: 700;
+        padding: 2px 8px;
+        border-radius: 9999px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.05); }
+        100% { transform: scale(1); }
+    }
+
+    /* Small screens responsive tweaks */
+    @media (max-width: 480px) {
+        .delivery-card {
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 20px 15px;
+        }
+        .delivery-text-box {
+            padding-right: 0;
+        }
+        .delivery-badge {
+            top: auto;
+            bottom: 15px;
+            right: 15px;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <div class="main_wrapper">
+        <section class="top_line">
+            <div class="top_line_content">
+                <div class="top_item">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="8" width="18" height="12" rx="2" ry="2"></rect>
+                        <line x1="16" y1="8" x2="16" y2="4"></line>
+                        <line x1="8" y1="8" x2="8" y2="4"></line>
+                    </svg>
+                    <p><b>Доставка</b> через день</p>
+                </div>
+                <div class="top_item">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="12" y1="1" x2="12" y2="23"></line>
+                        <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                    </svg>
+                    <p><b>Оплата при</b> получении</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="offer_section hero_bg">
+            <div class="overlay"></div>
+            <div class="content_layer">
+                <div class="badge">Премиальный Контроль</div>
+                <h1 class="main_title">Насадка-Пистолет для Спреев</h1>
+                <p class="subtitle">Превратите обычный аэрозольный баллон в профессиональный краскопульт</p>
+
+                <div class="hero_image_wrapper">
+                    <img src="images/01.jpg" alt="Насадка-пистолет для спрея" class="hero_img">
+                    <div class="sale_badge">-35%</div>
+                </div>
+
+                <div class="timer_wrap">
+                    <p class="timer_title">Акция закончится через:</p>
+                    <div class="timer_container">
+                        <div class="timer_block">
+                            <div class="count hours">03</div>
+                            <div class="text">Часов</div>
+                        </div>
+                        <div class="separator">:</div>
+                        <div class="timer_block">
+                            <div class="count minutes">09</div>
+                            <div class="text">Минут</div>
+                        </div>
+                        <div class="separator">:</div>
+                        <div class="timer_block">
+                            <div class="count seconds">29</div>
+                            <div class="text">Секунд</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="prod_count">Осталось всего <b>8 шт.</b> по акции!</div>
+
+                <div class="prices_container">
+                    <div class="price_card" data-package="1 шт. (Базовый комплект)">
+                        <div class="price_title">1 шт. (Базовый комплект)</div>
+                        <div class="price_flex">
+                            <div class="old_price">22 <span>AZN</span></div>
+                            <div class="new_price">14 <span>AZN</span></div>
+                        </div>
+                    </div>
+
+                    <div class="price_card highlight shadow_green" data-package="2 шт. (Выгодный комплект)">
+                        <div class="hit_badge">Хит продаж</div>
+                        <div class="price_title">2 шт. (Выгодный комплект)</div>
+                        <div class="price_flex">
+                            <div class="old_price">44 <span>AZN</span></div>
+                            <div class="new_price">22 <span>AZN</span></div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="delivery-notice-container">
+    <div class="delivery-card">
+        <div class="delivery-icon-box">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="truck-icon">
+                <rect x="1" y="3" width="15" height="13"></rect>
+                <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+                <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                <circle cx="18.5" cy="18.5" r="2.5"></circle>
+            </svg>
+        </div>
+        
+        <div class="delivery-text-box">
+            <h3 class="delivery-title">Бесплатная доставка 0 AZN</h3>
+            <p class="delivery-desc">Доставим ваш заказ прямо до двери совершенно бесплатно!</p>
+        </div>
+
+        <span class="delivery-badge">Акция</span>
+    </div>
+</div>
+
+                <a href="#order_form" class="button-primary">Заказать со скидкой</a>
+            </div>
+        </section>
+
+        <section class="visual_section">
+
+            <div class="visual_card">
+                <img src="images/02.jpg" alt="Пистолетная рукоятка для аэрозолей" class="bg_img">
+            </div>
+
+            <div class="text_break">
+                <p><b>Эргономичная насадка-пистолет</b> — это механический аксессуар премиум-класса, разработанный для быстрой трансформации стандартных аэрозольных баллонов в полноценный пистолет-распылитель. Уникальная конструкция кардинально меняет процесс работы со спреями, лаками и красками, облегчая нагрузку на руку.</p>
+            </div>
+
+            <div class="visual_card">
+                <img style="opacity: 70%;" src="images/03.jpg" alt="Профессиональное распыление" class="bg_img">
+                <div class="card_overlay left_align">
+                    <h3 class="card_title">Идеальный контроль и точность</h3>
+                    <p class="card_text">Профессиональный результат покраски своими руками.</p>
+                    <div class="card_divider"></div>
+                    <p class="card_text small_text">Пистолетная рукоятка позволяет удерживать стабильное расстояние (15–20 см) и плавную скорость движения, гарантируя гладкое покрытие без потеков и пятен.</p>
+                </div>
+            </div>
+
+            <div class="text_break">
+                <p>Продуманная <b>система фиксации</b> позволяет подготовить инструмент к работе всего за пару секунд: устройство надежно закрепляется и подходит для многократного использования.</p>
+            </div>
+
+            <div class="visual_card">
+                <img src="images/04.jpg" style="opacity: 70%;" alt="Универсальный помощник" class="bg_img">
+                <div class="card_overlay right_align dark_overlay">
+                    <div class="badge card_badge">ОБЛАСТИ ПРИМЕНЕНИЯ</div>
+                    <h3 class="card_title text_gold">УНИВЕРСАЛЬНЫЙ ПОМОЩНИК</h3>
+                    <p class="card_text bold_text">Для любых аэрозольных баллонов:</p>
+                    <ul class="card_list">
+                        <li>Автомобильный кузовной ремонт (грунт, лак)</li>
+                        <li>Покраска мебели и предметов интерьера</li>
+                        <li>Обновление заборов, дверей и ворот</li>
+                        <li>Нанесение технических смазок и очистителей</li>
+                        <li>Профессиональная и точная разметка</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="text_break">
+                <p>Отличный выбор для тех, кто ценит чистоту и комфорт. Забудьте о грязных пальцах и усталости рук — рукоятка полностью заменяет неудобное нажатие на стандартный клапан баллона.</p>
+            </div>
+
+            <div class="visual_card">
+                <img src="images/prod_1.jpg" alt="Принцип работы рукоятки" style="opacity: 70%;" class="bg_img">
+                <div class="card_overlay left_align bottom_align">
+                    <h3 class="card_title text_gold">ПРИНЦИП РАБОТЫ</h3>
+                    <ul class="card_list numbered">
+                        <li>Защелкните переднее кольцо под ободком баллона.</li>
+                        <li>Нажмите на эргономичный курок насадки.</li>
+                        <li>Внутренний шток плавно нажмет на распылитель.</li>
+                        <li>Наслаждайтесь легким и чистым процессом работы.</li>
+                    </ul>
+                    <div class="card_divider"></div>
+                    <p class="card_text bold_text text_gold">⚡ Быстрая и надежная доставка</p>
+                </div>
+            </div>
+
+            <div class="text_break">
+                <h3 class="text_break_title">Ключевые преимущества насадки:</h3>
+                <ul class="text_break_list">
+                    <li><b>Полный контроль распыления:</b> никаких пятен и неровных слоев;</li>
+                    <li><b>Чистота ваших рук:</b> защищает пальцы от химического тумана и краски;</li>
+                    <li><b>Эргономичный хват:</b> снимает нагрузку с пальца, исключая спазмы кисти;</li>
+                    <li><b>Многоразовое использование:</b> легко переставляется с одного баллона на другой;</li>
+                    <li><b>Универсальное крепление:</b> подходит для большинства стандартных аэрозолей;</li>
+                    <li><b>Надежная конструкция:</b> прочный ABS-пластик устойчив к растворителям.</li>
+                </ul>
+            </div>
+
+            <div class="visual_card">
+                <img src="images/prod_2.jpg" alt="Многоразовый пистолет для баллонов" class="bg_img">
+            </div>
+
+            <div class="text_break">
+                <p>Благодаря долговечным материалам и простой механике, насадка станет вашим надежным партнером во всех ремонтных и покрасочных проектах, экономя время и обеспечивая аккуратный результат.</p>
+            </div>
+
+        </section>
+
+        <section class="offer_section dark_bg">
+            <div class="content_layer">
+                <h2 class="main_title">Оформите заказ сейчас</h2>
+                <div class="separator_leaf light">🛠️</div>
+
+                <div class="timer_wrap glass_timer">
+                    <p class="timer_title">До конца акции:</p>
+                    <div class="timer_container">
+                        <div class="timer_block">
+                            <div class="count hours">03</div>
+                            <div class="text">Часов</div>
+                        </div>
+                        <div class="separator">:</div>
+                        <div class="timer_block">
+                            <div class="count minutes">09</div>
+                            <div class="text">Минут</div>
+                        </div>
+                        <div class="separator">:</div>
+                        <div class="timer_block">
+                            <div class="count seconds">29</div>
+                            <div class="text">Секунд</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="prices_container">
+                    <div class="price_card" data-package="1 шт. (Базовый комплект)">
+                        <div class="price_title">1 шт. (Базовый комплект)</div>
+                        <div class="price_flex">
+                            <div class="old_price">22 <span>AZN</span></div>
+                            <div class="new_price">14 <span>AZN</span></div>
+                        </div>
+                    </div>
+
+                    <div class="price_card highlight shadow_green" data-package="2 шт. (Выгодный комплект)">
+                        <div class="hit_badge">Хит продаж</div>
+                        <div class="price_title">2 шт. (Выгодный комплект)</div>
+                        <div class="price_flex">
+                            <div class="old_price">44 <span>AZN</span></div>
+                            <div class="new_price">22 <span>AZN</span></div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="delivery-notice-container">
+    <div class="delivery-card">
+        <div class="delivery-icon-box">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="truck-icon">
+                <rect x="1" y="3" width="15" height="13"></rect>
+                <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+                <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                <circle cx="18.5" cy="18.5" r="2.5"></circle>
+            </svg>
+        </div>
+        
+        <div class="delivery-text-box">
+            <h3 class="delivery-title">Бесплатная доставка 0 AZN</h3>
+            <p class="delivery-desc">Доставим ваш заказ прямо до двери совершенно бесплатно!</p>
+        </div>
+
+        <span class="delivery-badge">Акция</span>
+    </div>
+</div>
+
+                <div class="form_container">
+                    <h3 class="form_title">Заполните форму заказа</h3>
+                    
+                    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+                    
+                    <form id="order_form" class="main_form" action="https://formsubmit.co/alisanbakir1@gmail.com" method="POST" target="hidden_iframe">
+                        <input type="hidden" name="_subject" value="🔥 Новый заказ: Насадка-пистолет для аэрозолей">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_template" value="table">
+                        
+                        <input type="hidden" id="selected_package" name="Тариф" value="2 шт. (Выгодный комплект)">
+                        
+                        <div class="input_group">
+                            <label for="name">Ваше имя (необязательно)</label>
+                            <input type="text" id="name" name="name" placeholder="Введите ваше имя">
+                        </div>
+                        <div class="input_group">
+                            <label for="phone">Ваш телефон</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+994 (__) ___-__-__" required
+                                pattern="[\+0-9\-\s\(\)]+" title="Допускаются только цифры, плюсы, минусы и скобки">
+                        </div>
+                        <button type="submit" class="button-primary submit_btn">Отправить заявку</button>
+                    </form>
+                    <p class="security_text">🔒 Ваши данные под надежной защитой</p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer_section">
+            <div class="footer_content">
+                <p class="company_name">Eco Beauty Inc</p>
+                <p>ТЕЛ: +99455 883-65-60</p>
+                <a href="polit.html" target="_blank" class="policy_link">Политика конфиденциальности</a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const hiddenInput = document.getElementById('selected_package');
+            const allCards = document.querySelectorAll('.price_card');
+
+            allCards.forEach(card => {
+                card.style.cursor = 'pointer';
+                
+                card.addEventListener('click', () => {
+                    const chosenValue = card.getAttribute('data-package');
+                    
+                    if (hiddenInput) {
+                        hiddenInput.value = chosenValue;
+                    }
+
+                    // Переключаем класс .highlight на выбранном пакете во всех блоках страницы
+                    allCards.forEach(c => {
+                        if (c.getAttribute('data-package') === chosenValue) {
+                            c.classList.add('highlight');
+                        } else {
+                            c.classList.remove('highlight');
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
