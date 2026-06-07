@@ -240,6 +240,7 @@ section {
 }
 
 .hit_badge {
+    width: max-content;
     position: absolute;
     top: -12px;
     left: 50%;
